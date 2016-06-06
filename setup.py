@@ -6,7 +6,7 @@ name = 'websockify'
 setup(name=name,
       version=version,
       description="Websockify.",
-      long_description="Websockify."
+      long_description="Websockify.",
       classifiers=[
           "Programming Language :: Python",
           "Programming Language :: Python :: 2",
