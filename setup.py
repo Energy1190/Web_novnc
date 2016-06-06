@@ -20,9 +20,8 @@ setup(name=name,
       license='LGPLv3',
       url="https://github.com/Energy1190/Web_novnc",
 
-      packages=['websockify'],
+      packages=['web_novnc'],
       include_package_data=True,
-      install_requires=['numpy'],
+      install_requires=['websockify'],
       zip_safe=False,
     )
-
