@@ -1,12 +1,12 @@
 from setuptools import setup, find_packages
 
-version = '0.8.0'
-name = 'websockify'
+version = '0.0.1'
+name = 'web_novnc'
 
 setup(name=name,
       version=version,
-      description="Websockify.",
-      long_description="Websockify.",
+      description='web_novnc',
+      long_description='web_novnc',
       classifiers=[
           "Programming Language :: Python",
           "Programming Language :: Python :: 2",
@@ -16,27 +16,13 @@ setup(name=name,
           "Programming Language :: Python :: 3.3",
           "Programming Language :: Python :: 3.4"
         ],
-      data_files=[('share/websockify/include',
-                      ['include/util.js',
-                       'include/base64.js',
-                       'include/websock.js']),
-                  ('share/websockify/include/web-socket-js',
-                      ['include/web-socket-js/WebSocketMain.swf',
-                       'include/web-socket-js/swfobject.js',
-                       'include/web-socket-js/web_socket.js'])],
-      keywords='noVNC websockify',
+      keywords='noVNC',
       license='LGPLv3',
-      url="https://github.com/kanaka/websockify",
-      author="Joel Martin",
-      author_email="github@martintribe.org",
+      url="https://github.com/Energy1190/Web_novnc",
 
       packages=['websockify'],
       include_package_data=True,
       install_requires=['numpy'],
       zip_safe=False,
-      entry_points={
-        'console_scripts': [
-            'websockify = websockify.websocketproxy:websockify_init',
-        ]
-      },
     )
+
