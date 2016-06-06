@@ -97,7 +97,7 @@ if os.environ["LDAP_AUTH"]:
     @app.route("/", methods=['GET', 'POST'])
     @requires_auth
     def hello():
-        path = '/web_noVNC/websockify.py'
+        path = '/src/novnc/web_novnc/websockify.py'
         listen_port = str(int(port) + 10)
         vnc_server = '127.0.0.1:' + str(port)
         listen = '0.0.0.0:' + listen_port
@@ -107,7 +107,7 @@ if os.environ["LDAP_AUTH"]:
 else:
     @app.route("/", methods=['GET', 'POST'])
     def hello():
-        path = '/web_noVNC/websockify.py'
+        path = '/src/novnc/web_novnc/websockify.py'
         listen_port = str(int(port) + 10)
         vnc_server = '127.0.0.1:' + str(port)
         listen = '0.0.0.0:' + listen_port
