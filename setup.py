@@ -2,13 +2,11 @@ from setuptools import setup, find_packages
 
 version = '0.8.0'
 name = 'websockify'
-long_description = open("README.md").read() + "\n" + \
-    open("CHANGES.txt").read() + "\n"
 
 setup(name=name,
       version=version,
       description="Websockify.",
-      long_description=long_description,
+      long_description="Websockify."
       classifiers=[
           "Programming Language :: Python",
           "Programming Language :: Python :: 2",
